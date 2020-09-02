@@ -51,7 +51,7 @@ form {
 }
 #name,
 #email,
-#age,
+#number,
 #dropdown {
   border-radius: 2px;
   border: none;
