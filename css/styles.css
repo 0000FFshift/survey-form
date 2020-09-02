@@ -1,6 +1,7 @@
 :root {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
+  font-size: 20px;
 }
 
 body::before {
@@ -41,6 +42,65 @@ form {
   min-width: auto;
   margin-top: 40px;
   margin: 45px auto 40px auto;
-  padding: 10px 25px 10px 25px;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.info {
+  margin: 25px 0px 5px;
+}
+#name,
+#email,
+#age,
+#dropdown {
+  border-radius: 2px;
+  border: none;
+  height: 2.5em;
+  width: 100%;
+  margin: 10px 0px 0px;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 0px 10px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  font-size: inheret;
+}
+
+#radios {
+  padding: 10px 0px 0px;
+}
+
+.radio-buttons,
+.checkboxes {
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0px;
+}
+
+#goodpizza {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  margin: 10px 0px 0px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+#submit {
+  width: 100%;
+  height: 75px;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  border-width: 0px;
+  border: white;
   border-radius: 5px;
 }

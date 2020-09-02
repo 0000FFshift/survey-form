@@ -11,8 +11,92 @@
     <p id="description"><i>Let's learn about your pizza preferences</i></p>
 
     <form id="survey-form">
-      <h4>Name</h4>
-      <br /><input type="text" placeholder="Enter name here" />
+      <div class="info">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter name here" required />
+      </div>
+
+      <div class="info">
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="you@domain.com" required />
+      </div>
+
+      <div class="info">
+        <label for="age" id="number-label">Age (optional)</label>
+        <input
+          id="age"
+          type="number"
+          min="0"
+          max="125"
+          placeholder="Enter age here"
+        />
+      </div>
+
+      <div class="info">
+        How many times do you eat pizza on average in a year?
+        <div id="radios">
+          <label class="radio-buttons">
+            <input value="0-5" type="radio" name="pizza-frequency" checked />0 -
+            5
+          </label>
+          <label class="radio-buttons">
+            <input id="small" type="radio" name="pizza-frequency" />6 - 10
+          </label>
+          <label value="11-20" class="radio-buttons">
+            <input id="11-20" type="radio" name="pizza-frequency" />11 - 20
+          </label>
+          <label class="radio-buttons">
+            <input value="20+"" type="radio" name="pizza-frequency" />20+
+          </label>
+        </div>
+      </div>
+
+      <div class="info">
+        Please select your favorite part of the pizza
+        <select id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="crust">Crust</option>
+          <option value="cheese">Cheese</option>
+          <option value="sauce">Sauce</option>
+          <option value="toppings">Toppings</option>
+        </select>
+      </div>
+
+      <div class="info">
+        What are your favorite styles of pizza? (mark all that apply)
+        <div id="radios">
+          <label class="checkboxes">
+            <input value="newyork" type="checkbox" name="pizza-styles" />New
+            York
+          </label>
+          <label class="checkboxes">
+            <input
+              value="neapolitan"
+              type="checkbox"
+              name="pizza-styles"
+            />Neapolitan
+          </label>
+          <label class="checkboxes">
+            <input value="chicago" type="checkbox" name="pizza-styles" />Chicago
+          </label>
+          <label class="checkboxes">
+            <input value="detroit" type="checkbox" name="pizza-styles" />Detroit
+          </label>
+        </div>
+      </div>
+
+      <div class="info">
+        In your opinion, what seperates good pizza from bad pizza?
+        <textarea
+          id="goodpizza"
+          name="goodpizza"
+          placeholder="Write story here"
+        ></textarea>
+      </div>
+
+      <div class="info">
+        <button type="submit" id="submit">Submit</button>
+      </div>
     </form>
   </body>
 </html>
